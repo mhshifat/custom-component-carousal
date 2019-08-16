@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #333333;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 3px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin: 5%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  flex-shrink: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.content {
+  width: 20%;
+  height: 100%;
+  color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.content-1 {
+  background: cadetblue;
+}
+
+.content-2 {
+  background: crimson;
+}
+
+.content-3 {
+  background: seagreen;
+}
+
+.content-4 {
+  background: slateblue;
+}
+
+.content-5 {
+  background: darkblue;
+}
+
+.carousel-controller {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.controller-left,
+.controller-right {
+  width: 40px;
+  height: 40px;
+  background: rgba(247, 247, 247, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+.icon:hover {
+  animation: heartbeat 0.4s ease infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
