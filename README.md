@@ -1,2 +1,7 @@
 # custom-component-carousal
-Web carousal component
+Custom component carousel
+
+### Demo Link
+
+link: [https://custom-component-carousel.netlify.com/](https://custom-component-carousel.netlify.com/)
+
