@@ -1,4 +1,4 @@
-# custom-component-carousal
+# Carousel
 Custom component carousel
 
 ### Demo Link
